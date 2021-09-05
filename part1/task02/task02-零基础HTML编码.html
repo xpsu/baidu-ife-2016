@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+    <head>
+        <meta charset="UTF-8">
+        <title>任务二：零基础HTML编码</title>
+        <style>
+            /* 通用设置 */
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Microsoft YaHei", sans-serif;
+            }
+            body {
+                background-color: #d8d8d8;
+            }
+
+            /* 设置导航栏样式 */
+            header {
+                background-color: #333333;
+                height: 60px;
+                position: relative;
+            }
+            header h1 {
+                color: white;
+                position: absolute;
+                bottom: 6%;
+                left: 1%;
+            }
+            header ul {
+                list-style-type: none;
+                position: absolute;
+                bottom: 8%;
+                right: 1%;
+            }
+            header li {
+                display: inline;
+            }
+            header a {
+                color: white;
+                text-decoration: none;
+            }
+            header li a:hover {
+                color: red;
+            }
+
+            /* 设置文章样式 */
+            .article,
+            aside {
+                background-color: #fff;
+                margin: 25px;
+                padding: 25px;
+                box-shadow: 10px 10px 5px #888888;
+            }
+            h2,h3,h5,p {
+                padding: 10px;
+            }
+            h3 {
+                color: rgba(90,90,90,0.8);
+                font-size: 1.1rem;
+            }
+            h5 {
+                color: rgba(100,100,100,0.5);
+                font-size: 0.8rem;
+            }
+            p {
+                text-indent: 2em;
+            }
+
+            /* 设置列表样式 */
+            section ul {
+                margin-left: 30px;
+                list-style: none;
+            }
+            section ol {
+                margin-left: 30px;
+                padding: 10px 0 0 20px;
+            }
+
+            /* 设置图片样式 */
+            .picture {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .picture-img {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            .picture-text {
+                text-align: center;
+                text-indent: unset;
+            }
+
+            /* 设置表格样式 */
+            table {
+                border-collapse: collapse;
+                width: 50%;
+                margin: 10px;
+            }
+            th {
+                background-color: black;
+                color: white;
+            }
+            td {
+            }
+
+            /* 设置侧栏样式 */
+            aside form {
+                position: relative;
+            }
+            .form-input {
+                display: block;
+                text-align: center;
+            }
+            #form-submit {
+                background-color: #3355d0;
+                color: white;
+                width: 80%;
+                height: 40px;
+                border-radius: 15px;
+            }
+            #password-text {
+                display: block;
+                text-align: center;
+                font-size: 0.8em;
+                color: rgba(100, 100, 100, 0.8);
+            }
+
+            /* 底部设置 */
+            footer {
+                position: relative;
+                background-color: #333;
+                height: 50px;
+            }
+            .footer-text {
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>网站一级标题</h1>
+            <ul>
+                <li><a href="https://github.com/xpsu">导航链接一</a></li>
+                <li><a href="https://github.com/xpsu">导航链接二</a></li>
+                <li><a href="https://github.com/xpsu">导航链接三</a></li>
+                <li><a href="https://github.com/xpsu">导航链接四</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="article">
+                <h2>第一篇文章一级标题</h2>
+                <h3>第一篇文章二级标题</h3>
+                <h5>文章作者 文章发表时间</h5>
+                <p>
+                    这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+                    <a href="https://github.com/xpsu" target="_blank">这里有一个链接到我GITHUB的链接</a>
+                    <b>
+                        这是加粗字体
+                    </b><br>
+                    <img src="./01.jpg" alt="美女" title="美女" width="200">
+                </p>
+            </div>
+
+            <div class="article">
+                <h2>第二篇文章一级标题</h2>
+                <h3>第二篇文章二级标题</h3>
+                <h5>文章作者 文章发表时间</h5>
+                <p>
+                    这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落
+                    <a href="https://github.com/xpsu" target="_blank">这里有一个链接到我GITHUB的链接</a>
+                    <b>
+                        这是加粗字体
+                    </b><br>
+                </p>
+                <ul>
+                    <li>列表项目一</li>
+                    <li>列表项目二</li>
+                    <li>列表项目三</li>
+                </ul>
+            </div>
+
+            <div class="article">
+                <h2>图片</h2>
+                <div class="picture">
+                    <div class="picture-img">
+                        <p class="picture-text">好看的图片</p>
+                        <img src="./01.jpg" alt="美女" title="美女" width="200">
+                    </div>
+                    <div class="picture-img">
+                        <p class="picture-text">好看的图片</p>
+                        <img src="./01.jpg" alt="美女" title="美女" width="200">
+                    </div>
+                    <div class="picture-img">
+                        <p class="picture-text">好看的图片</p>
+                        <img src="./01.jpg" alt="美女" title="美女" width="200">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="article">
+                <h2>最后一篇文章一级标题</h2>
+                <h3>最后一篇文章二级标题</h3>
+                <h5>文章作者 文章发表时间</h5>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <p>下面是一个表格，给表格加了一个border="1"好让你看出来是一个表格</p>
+                <table border="">
+                    <caption>表格名</caption>
+                    <thead>
+                        <tr>
+                            <th>科目</th>
+                            <th>分数</th>
+                            <th>难度</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>语文</td>
+                            <td>85</td>
+                            <td>简单</td>
+                        </tr>
+                        <tr>
+                            <td>数学</td>
+                            <td>90</td>
+                            <td>困难</td>
+                        </tr>
+                        <tr>
+                            <td>英语</td>
+                            <td>60</td>
+                            <td>中等</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>总分</td>
+                            <td colspan="2">235</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <aside>
+            <h3>这里以后是一个侧栏，这是侧栏的标题 侧栏注册窗口标题</h3>
+            <form method="post" id="aside-table">
+                <label class="form-input">邮箱: <input type="email" placeholder="请输入正确的邮箱"></label>
+                <label class="form-input">密码: <input type="password" placeholder="请输入正确的密码"></label>
+                <label class="form-input">确认密码密码: <input type="password" placeholder="请确认密码"></label>
+                <label id="password-text">密码为6-16位的英文,数字</label>
+                <div class="form-input">性别:&nbsp;
+                    <label>男<input type="radio" value="1" name="gender"></label>
+                    <label>女<input type="radio" value="0" name="gender"></label>
+                </div>
+
+                <div class="form-input">城市:&nbsp;
+                    <label>
+                        <select>
+                            <option>北京</option>
+                            <option>昆明</option>
+                            <option selected="selected">大理</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-input">爱好:&nbsp;
+                    <label><input type="checkbox">电影</label>
+                    <label><input type="checkbox" >运动</label>
+                    <label><input type="checkbox">音乐</label>
+                    <label><input type="checkbox">阅读</label>
+                </div>
+                <div class="form-input">
+                    <h4 style="vertical-align: top" >个人描述:</h4>
+                    <label><textarea rows="3" cols="40">这是一个多行输入框，请输入您的个人描述</textarea></label>
+                </div>
+                <label class="form-input"><input id="form-submit" type="submit" value="提交"></label>
+            </form>
+        </aside>
+
+        <footer>
+            <p class="footer-text">版权所有© by xpsu</p>
+        </footer>
+    </body>
+</html>

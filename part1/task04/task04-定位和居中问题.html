@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+    <head>
+        <meta charset="UTF-8">
+        <title>定位和居中问题</title>
+        <style>
+            .box {
+                position: absolute;
+                background-color: #ccc;
+                width: 400px;
+                height: 200px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+            }
+            .round1,
+            .round2{
+                width: 100px;
+                height: 100px;
+                background-color: #fc0;
+            }
+
+            .round1 {
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+            }
+            .round2 {
+                transform: translate(350px, 50%);
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="round1"></div>
+            <div class="round2"></div>
+        </div>
+
+    </body>
+</html>
